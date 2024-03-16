@@ -4,7 +4,8 @@ const Education = ({value, onChange}) => {
 
     // school name, title of study and date of study
   return (
-    <>
+    <div className="form-container">
+        <h2>Education</h2>
             <InputGroup
                 type={"text"}
                 id={"schoolName"}
@@ -41,8 +42,9 @@ const Education = ({value, onChange}) => {
                 data-key={"location"}
                 onChange={onChange}
             />
-        </>
+        </div>
   )
 }
 
 export default Education
+

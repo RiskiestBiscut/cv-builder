@@ -4,7 +4,8 @@ const Experience = ({value, onChange}) => {
 
     // school name, title of study and date of study
   return (
-    <>
+    <div className="form-container">
+        <h2>Experience</h2>
             <InputGroup
                 type={"text"}
                 id={"jobTitle"}
@@ -50,7 +51,7 @@ const Experience = ({value, onChange}) => {
                 data-key={"description"}
                 onChange={onChange}
             />
-        </>
+        </div>
   )
 }
 

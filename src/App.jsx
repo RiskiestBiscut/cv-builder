@@ -70,17 +70,33 @@ function App() {
           <span>{person.location}</span>
         </div>
         <div className='education-info'>
-          <span>{education.location}</span>
-          <span>{education.date}</span>
-          <span>{education.degree}</span>
-          <span>{education.schoolName}</span>
+          <h2 className='cv-heading'>Education</h2>
+          <div className='info-format'>
+            <div>
+              <span>{education.location}</span>
+              <span>{education.date}</span>
+            </div>
+            <div>
+              <span className='info-heading'>{education.degree}</span>
+              <span>{education.schoolName}</span>
+            </div>
+          </div>
         </div>
         <div className='experience-info'>
-          <span>{experience.location}</span>
-          <span>{experience.date}</span>
-          <span>{experience.jobTitle}</span>
-          <span>{experience.companyName}</span>
-          <p>{experience.description}</p>
+          <h2 className='cv-heading'>Experience</h2>
+          <div className='info-format'>
+            <div>
+              <span>{experience.location}</span>
+              <span>{experience.date}</span>
+            </div>
+            <div>
+              <span className='info-heading'>{experience.jobTitle}</span>
+              <span>{experience.companyName}</span>
+              <p>{experience.description}</p>
+            </div>
+          </div>
+          
+          
         </div>
       </div>
     </div>

@@ -1,9 +1,10 @@
 import InputGroup from "./InputGroup";
 
 
-const General = ({value, onChange}) => {
+const General = ({ value, onChange }) => {
       return (
-        <>
+        <div className="form-container">
+            <h2>General Info</h2>
             <InputGroup
                 type={"text"}
                 id={"fullName"}
@@ -40,7 +41,7 @@ const General = ({value, onChange}) => {
                 data-key={"location"}
                 onChange={onChange}
             />
-        </>
+        </div>
       );
 }
 
